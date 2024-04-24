@@ -24,7 +24,8 @@ public class EventController {
     }
 
     @PostMapping
-    public ResponseEntity<EventIdDTO> createEvent(@RequestBody EventRequestDTO body, UriComponentsBuilder uriComponentsBuilder){
+    public ResponseEntity<EventIdDTO> createEvent(@RequestBody EventRequestDTO body,
+                                                  UriComponentsBuilder uriComponentsBuilder){
         EventIdDTO eventIdDTO = this.service.createEvent(body);
 
         var uri = uriComponentsBuilder.path("/events/{id}").buildAndExpand(eventIdDTO.eventId()).toUri();
