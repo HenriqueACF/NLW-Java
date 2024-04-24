@@ -8,7 +8,7 @@
 		<version>3.2.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>java.com</groupId>
+	<groupId>com.example</groupId>
 	<artifactId>pass-in</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pass-in</name>
